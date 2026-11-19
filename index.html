@@ -80,7 +80,7 @@
   figcaption{font-size:13px;color:var(--faint);margin-top:10px}
 
   .wheel{width:160px;height:160px;border-radius:50%;position:relative;border:3px solid var(--ink);
-    background:conic-gradient(var(--c) 0 72deg,color-mix(in srgb,var(--c) 75%,var(--paper)) 72deg 144deg,color-mix(in srgb,var(--c) 50%,var(--paper)) 144deg 216deg,color-mix(in srgb,var(--c) 30%,var(--paper)) 216deg 288deg,color-mix(in srgb,var(--c) 12%,var(--paper)) 288deg 360deg)}
+    background:conic-gradient(#d62828 0 72deg,#2a9d4b 72deg 144deg,#f4c20d 144deg 216deg,#f77f00 216deg 288deg,#1d7fd1 288deg 360deg)}
   .wheel::after{content:"";position:absolute;left:50%;top:50%;width:4px;height:66px;background:var(--ink);transform:translate(-50%,-100%) rotate(40deg);transform-origin:50% 100%;border-radius:2px}
   .legend{display:flex;gap:10px 14px;flex-wrap:wrap;margin-top:12px;font-size:13px;color:var(--soft)}
   .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle;border:1px solid var(--line)}
@@ -110,9 +110,9 @@
     <div class="deadline">
       <div><b>25/11</b><span>1ª leva finalizada (salão + cartão de eventos). Mandar antes pra revisão</span></div>
       <div><b>27/11</b><span>Réveillon (10 estáticos) + panfleto franqueado Øliver's</span></div>
-      <div><b>30/11</b><span>Natal + base nova de estáticos da expansão</span></div>
+      <div><b>30/11</b><span>Natal, expansão e os 20 quadros da Região Oceânica</span></div>
       <div><b>05/12</b><span>Região Oceânica: estáticos, giveaway e adesivo</span></div>
-      <div><b>10/12</b><span>Região Oceânica: impressos e quadros</span></div>
+      <div><b>10/12</b><span>Região Oceânica: kit impresso de inauguração</span></div>
       <div><b>15 a 20/12</b><span>Tudo revisado e finalizado</span></div>
     </div>
 
@@ -124,7 +124,7 @@
         <tr><td><b>Temakeria</b></td><td>Cartão de eventos, banners de Natal, expansão</td><td class="num">10</td></tr>
         <tr><td><b>Ogro Steaks</b></td><td>Banners de Natal, expansão</td><td class="num">9</td></tr>
         <tr><td><b>Grupo ROB</b></td><td>Estáticos institucionais da expansão (as 3 marcas)</td><td class="num">5</td></tr>
-        <tr class="total"><td>Total</td><td>Cada estático conta como 1 modelo, redimensionado nos 3 formatos digitais</td><td class="num">92</td></tr>
+        <tr class="total"><td>Total</td><td>Quantidade de peças pedidas em cada demanda. Redimensionamentos não entram na conta</td><td class="num">92</td></tr>
       </table></div>
     </div>
 
@@ -134,7 +134,7 @@
       <a href="#p1" style="--c:var(--olv)"><span class="num">01</span><span class="t">1ª leva · salão</span><span class="b">Até 25/11</span></a>
       <a href="#reveillon" style="--c:var(--alert)"><span class="num">02</span><span class="t">Réveillon Araruama</span><span class="b">Até 27/11</span></a>
       <a href="#natal" style="--c:var(--natal)"><span class="num">03</span><span class="t">Natal</span><span class="b">Até 30/11</span></a>
-      <a href="#oceanica" style="--c:var(--olv)"><span class="num">04</span><span class="t">Região Oceânica</span><span class="b">05 e 10/12</span></a>
+      <a href="#oceanica" style="--c:var(--olv)"><span class="num">04</span><span class="t">Região Oceânica</span><span class="b">30/11 a 10/12</span></a>
       <a href="#expansao" style="--c:var(--rob)"><span class="num">05</span><span class="t">Expansão</span><span class="b">Até 30/11</span></a>
     </nav>
   </div>
@@ -156,18 +156,19 @@
         <div class="block">
           <h3>Roleta de mesa · cinco posições</h3>
           <p>Uma roleta por mesa, com ponteiro manual. É o próprio cliente que sinaliza, da mesa, o que quer receber.</p>
+          <p><strong>No lugar do dinossauro da referência, a águia da Øliver's</strong>, em preto e branco, com um desenho que funcione bem impresso. Dentro dela, a roletinha que gira com as 5 opções, em <strong>cores bem vivas</strong> (vermelho, verde, amarelo, laranja...) pra chamar atenção de longe.</p>
           <div class="wheel" aria-hidden="true"></div>
           <div class="legend">
-            <span><i style="background:var(--c)"></i>Satisfeito</span>
-            <span><i style="background:color-mix(in srgb,var(--c) 75%,var(--paper))"></i>Garçom</span>
-            <span><i style="background:color-mix(in srgb,var(--c) 50%,var(--paper))"></i>Salgadas e doces</span>
-            <span><i style="background:color-mix(in srgb,var(--c) 30%,var(--paper))"></i>Só doce</span>
-            <span><i style="background:color-mix(in srgb,var(--c) 12%,var(--paper))"></i>Só salgada</span>
+            <span><i style="background:#d62828"></i>Satisfeito</span>
+            <span><i style="background:#2a9d4b"></i>Garçom</span>
+            <span><i style="background:#f4c20d"></i>Salgadas e doces</span>
+            <span><i style="background:#f77f00"></i>Só doce</span>
+            <span><i style="background:#1d7fd1"></i>Só salgada</span>
           </div>
         </div>
         <figure class="block">
           <img src="referencia-roleta.png" alt="Referência: roleta de mesa em formato de dinossauro, com ponteiro e base de madeira">
-          <figcaption>Referência de formato: peça recortada, ilustrada, com ponteiro giratório e base. Fica em pé na mesa, legível de longe pro garçom.</figcaption>
+          <figcaption>Referência só de formato: peça recortada, com ponteiro giratório e base, em pé na mesa e legível de longe pro garçom. Na nossa, entra a águia da Øliver's em preto e branco no lugar do dinossauro. Cores da roleta acima são só ilustrativas.</figcaption>
         </figure>
       </div>
       <div>
@@ -179,7 +180,7 @@
               <div class="chips"><span class="chip date">Até 25/11</span><a class="chip" href="https://drive.google.com/drive/folders/1KypUADKXph5fYM4uPO4LIwyBryXiogy5?usp=sharing">Drive: fotos das barcas + QR Code</a></div></div></li>
             <li><span class="ic">3</span><div><strong>Uniformes por cargo</strong><span class="d">Cumim, garçom e gerente. <b>Camisa preta</b>, logo da Øliver's no peito e o nome do cargo em algum lugar da camisa: nas costas, do outro lado do peito ou na manga, onde ficar melhor. Variações pra gente aprovar são bem-vindas.</span></div></li>
             <li><span class="ic">1</span><div><strong>Broche</strong><span class="d">Na identidade visual da Øliver's, com espaço pra nome e cargo (preenchido com etiquetadora)</span></div></li>
-            <li><span class="ic">1</span><div><strong>Roleta de mesa</strong><span class="d">Frente ilustrada + disco com as 5 posições + ponteiro + base</span><div class="chips"><span class="chip">Arquivo pra gráfica</span><span class="chip">Mockup na mesa</span></div></div></li>
+            <li><span class="ic">1</span><div><strong>Roleta de mesa</strong><span class="d">Águia da Øliver's em preto e branco + roletinha interna com as 5 opções em cores vivas + ponteiro + base</span><div class="chips"><span class="chip">Arquivo pra gráfica</span><span class="chip">Mockup na mesa</span></div></div></li>
             <li><span class="ic">1</span><div><strong>Pulseira à la carte</strong><span class="d"><b>Preta</b>, com a logo da Øliver's e algo como "à la carte" ou "experiência à la carte". Só quem é à la carte usa: sem pulseira é rodízio. Básica, de papel, igual às de festa.</span></div></li>
             <li><span class="ic">1</span><div><strong>Cardápio de salão impresso</strong><span class="d">A arte já está montada. Aguardamos a devolutiva dos valores e enviamos assim que possível. A carta de vinhos já foi entregue.</span><div class="chips"><span class="chip wait">Prazo a definir conforme envio do cardápio</span></div>
               <p class="note" style="margin:10px 0 0">* Apenas correção de valores e descrições de produtos.</p></div></li>
@@ -217,7 +218,7 @@
         <div class="deliv">
           <h3>Entregáveis</h3>
           <ul>
-            <li><span class="ic">10</span><div><strong>Estáticos da campanha</strong><span class="d">Pelo menos 10 modelos, cada um redimensionado em feed, story e quadrado: anúncio da venda dos ingressos e kit da virada</span><div class="chips"><span class="chip date">Até 27/11</span><span class="chip">4:5 · 9:16 · 1:1</span></div></div></li>
+            <li><span class="ic">10</span><div><strong>Estáticos da campanha</strong><span class="d">Pelo menos 10 estáticos, com os redimensionamentos pra feed, story e quadrado: anúncio da venda dos ingressos e kit da virada</span><div class="chips"><span class="chip date">Até 27/11</span><span class="chip">4:5 · 9:16 · 1:1</span></div></div></li>
             <li><span class="ic">2</span><div><strong>Kit da virada</strong><span class="d"><b>Bandeirola</b> "Welcome 2027" com a logo da Øliver's · <b>carta de agradecimento impressa</b>, em formato de folha ou cartinha, com o <b>cupom especial</b> dentro da própria carta</span><div class="chips"><span class="chip">Arquivo pra gráfica</span><span class="chip wait">Briefing da carta até 25/11</span></div></div></li>
           </ul>
         </div>
@@ -249,7 +250,7 @@
   <div class="wrap">
     <span class="tag">Øliver's · loja nova em Piratininga</span>
     <h2><span class="n">04</span>Região Oceânica</h2>
-    <span class="key hot">Digitais e adesivo até 05/12</span><span class="key hot">Impressos e quadros até 10/12</span><span class="key">Briefing até 30/11</span><span class="key">Inauguração 08/01</span>
+    <span class="key hot">Digitais e adesivo até 05/12</span><span class="key hot">Quadros até 30/11</span><span class="key hot">Kit impresso até 10/12</span><span class="key">Briefing até 30/11</span><span class="key">Inauguração 08/01</span>
 
     <div class="grid">
       <div>
@@ -267,7 +268,7 @@
             <li>aquarelas com as paisagens das praias da Região Oceânica</li>
             <li>quadros com frases sobre "a pizza da sua história"</li>
           </ul>
-          <p>Tudo sempre conversando com a estética da loja. São 3 a 4 quadros grandes por parede ou área.</p>
+          <p>Tudo sempre conversando com a estética da loja. São 3 a 4 quadros grandes por parede ou área. <strong>Tamanho: provavelmente A1</strong> (59,4 × 84,1 cm), o maior quadro. As dimensões finais a gente envia.</p>
         </div>
         <div class="block">
           <h3>Medidas</h3>
@@ -275,6 +276,7 @@
             <div><div class="frame" style="width:60px;height:84px">porta</div><div class="cap">Adesivo Área Kids<br>2,10 × 1,50 m*</div></div>
             <div><div class="frame" style="width:40px;height:60px">10×15</div><div class="cap">Panfleto<br>10 × 15 cm</div></div>
             <div><div class="frame" style="width:32px;height:45px">ímã</div><div class="cap">Ímã<br>5 × 7 ou 5 × 9 cm*</div></div>
+            <div><div class="frame" style="width:56px;height:79px">A1</div><div class="cap">Quadros<br>59,4 × 84,1 cm*</div></div>
           </div>
           <div class="scale" style="margin-top:14px">
             <div><div class="frame" style="width:48px;height:60px">4:5</div><div class="cap">Feed<br>1080 × 1350</div></div>
@@ -288,14 +290,14 @@
         <div class="deliv">
           <h3>Loja</h3>
           <ul>
-            <li><span class="ic">20</span><div><strong>Artes de quadro</strong><span class="d">20 artes diferentes que conversam entre si (ver direcionamento ao lado)</span><div class="chips"><span class="chip date">Até 10/12</span></div></div></li>
+            <li><span class="ic">20</span><div><strong>Artes de quadro</strong><span class="d">20 artes diferentes que conversam entre si (ver direcionamento ao lado)</span><div class="chips"><span class="chip date">Até 30/11</span><span class="chip wait">Provavelmente A1 · dimensões a enviar</span></div></div></li>
             <li><span class="ic">1</span><div><strong>Adesivo da porta da Área Kids</strong><span class="d">Tapa a passagem dos entregadores, pela segurança das crianças</span><div class="chips"><span class="chip date">Até 05/12</span><span class="chip wait">2,10 × 1,50 m a confirmar</span><span class="chip wait">Direcionamento a enviar</span></div></div></li>
           </ul>
         </div>
         <div class="deliv">
           <h3>Divulgação</h3>
           <ul>
-            <li><span class="ic">10</span><div><strong>Estáticos de tráfego</strong><span class="d">Pelo menos 10 modelos, redimensionados em feed, story e quadrado</span><div class="chips"><span class="chip date">Até 05/12</span><span class="chip">4:5 · 9:16 · 1:1</span></div></div></li>
+            <li><span class="ic">10</span><div><strong>Estáticos de tráfego</strong><span class="d">Pelo menos 10 estáticos, com os redimensionamentos pra feed, story e quadrado</span><div class="chips"><span class="chip date">Até 05/12</span><span class="chip">4:5 · 9:16 · 1:1</span></div></div></li>
             <li><span class="ic">1</span><div><strong>Giveaway</strong><span class="d">Arte digital do sorteio, em carrossel de 2 a 3 telas</span><div class="chips"><span class="chip date">Até 05/12</span></div></div></li>
             <li><span class="ic">4</span><div><strong>Kit impresso de inauguração</strong><span class="d">
               · Cartão de retrovisor de carro (gabarito que você já tem)<br>
