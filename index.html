@@ -93,6 +93,28 @@
   .mock p:last-child{margin-bottom:0}
   .credit{font-size:12px;color:var(--faint);margin-top:16px;letter-spacing:.04em}
 
+  /* natal · briefs */
+  .sub{margin-top:48px;padding-top:36px;border-top:1px dashed var(--line)}
+  .subh{font-family:Fraunces,Georgia,serif;font-size:30px;letter-spacing:-.01em;text-transform:none;color:var(--ink);font-weight:600;margin:8px 0 6px}
+  .sub .intro{max-width:640px;color:var(--soft)}
+  img.photo{display:block;width:100%;max-width:none;border-radius:16px;border:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(0,0,0,.45)}
+  .briefs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
+  @media (max-width:720px){.briefs{grid-template-columns:1fr}}
+  .briefs>*{min-width:0}
+  .brief{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px}
+  .brief.wide{grid-column:1 / -1}
+  .brief h4{font-family:Fraunces,Georgia,serif;font-size:21px;font-weight:600;line-height:1.2;margin:0 0 12px;padding-right:34px}
+  .brief .bn{position:absolute;top:18px;right:18px;width:28px;height:28px;border-radius:50%;background:var(--c);color:var(--paper);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .brief ul{margin:0 0 12px;padding-left:18px;color:var(--soft);font-size:15px}
+  .brief li{margin:3px 0}
+  .brief .obj{font-size:14px;color:var(--soft)}
+  .brief th{white-space:nowrap}
+  .brief td:nth-child(2){white-space:nowrap}
+  .flavors{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:6px 0 12px}
+  @media (max-width:520px){.flavors{grid-template-columns:repeat(3,1fr)}}
+  .flavors img{display:block;width:100%;max-width:none;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--line);box-shadow:none}
+  .flavors figcaption{font-size:11px;text-align:center;margin-top:5px;line-height:1.25}
+
   .wheel{width:160px;height:160px;border-radius:50%;position:relative;border:3px solid var(--ink);
     background:conic-gradient(#d62828 0 72deg,#2a9d4b 72deg 144deg,#f4c20d 144deg 216deg,#f77f00 216deg 288deg,#1d7fd1 288deg 360deg)}
   .wheel::after{content:"";position:absolute;left:50%;top:50%;width:4px;height:66px;background:var(--ink);transform:translate(-50%,-100%) rotate(40deg);transform-origin:50% 100%;border-radius:2px}
@@ -135,11 +157,11 @@
       <h3>Peças por marca</h3>
       <div class="tbl"><table>
         <tr><th>Marca</th><th>O que entra</th><th>Peças</th></tr>
-        <tr><td><b>Øliver's</b></td><td>Salão (uniformes, broche, roleta, pulseira, cardápio), Réveillon, Natal, Região Oceânica, expansão</td><td class="num">68</td></tr>
+        <tr><td><b>Øliver's</b></td><td>Salão (uniformes, broche, roleta, pulseira, cardápio), Réveillon, Natal (com Pizza de Rabanada), calendário de dezembro, Região Oceânica, expansão</td><td class="num">74</td></tr>
         <tr><td><b>Temakeria</b></td><td>Cartão de eventos, banners de Natal, expansão</td><td class="num">10</td></tr>
         <tr><td><b>Ogro Steaks</b></td><td>Banners de Natal, expansão</td><td class="num">9</td></tr>
         <tr><td><b>Grupo ROB</b></td><td>Estáticos institucionais da expansão (as 3 marcas)</td><td class="num">5</td></tr>
-        <tr class="total"><td>Total</td><td>Quantidade de peças pedidas em cada demanda. Redimensionamentos não entram na conta</td><td class="num">92</td></tr>
+        <tr class="total"><td>Total</td><td>Quantidade de peças pedidas em cada demanda. Redimensionamentos não entram na conta</td><td class="num">98</td></tr>
       </table></div>
     </div>
 
@@ -279,9 +301,138 @@
       <h3>Entregáveis</h3>
       <ul>
         <li><span class="ic">1</span><div><strong>Carrossel · dinâmica de Natal nas unidades Øliver's</strong><span class="d">Explica como funciona a campanha nas lojas</span><div class="chips"><span class="chip">Feed 4:5 · 1080 × 1350</span></div></div></li>
-        <li><span class="ic">9</span><div><strong>Banners pros canais · todas as marcas</strong><span class="d">Produto de Natal no iFood, no site/cardápio próprio e no 99, por marca, nas dimensões de cada canal (3 por marca)</span><div class="chips"><span class="chip">Øliver's</span><span class="chip">Ogro</span><span class="chip">Temakeria</span></div></div></li>
+        <li><span class="ic">9</span><div><strong>Banners pros canais · todas as marcas</strong><span class="d">Produto de Natal no iFood, no site/cardápio próprio e no 99, por marca, nas dimensões de cada canal (3 por marca). Os da Øliver's são os da Pizza de Rabanada, com briefing completo abaixo.</span><div class="chips"><span class="chip">Øliver's</span><span class="chip">Ogro</span><span class="chip">Temakeria</span></div></div></li>
         <li><span class="ic">3</span><div><strong>Campanha física nas unidades Øliver's</strong><span class="d">Arte da <b>roleta</b> de Natal, <b>Christmas Ticket</b> impresso e <b>cartinha do Noel</b></span><div class="chips"><span class="chip">Arquivo pra gráfica</span></div></div></li>
       </ul>
+    </div>
+
+    <!-- PIZZA DE RABANADA -->
+    <div class="sub">
+      <span class="tag">Øliver's · produto de Natal</span>
+      <h3 class="subh">Pizza de Rabanada</h3>
+      <p class="intro">A pizza de rabanada com doce de leite volta em dezembro e já é tradição da Øliver's. As peças abaixo trabalham o produto no feed, nos stories e nos canais de pedido.</p>
+
+      <div class="grid">
+        <figure>
+          <img class="photo" src="natal/rabanada.jpg" alt="Pizza de Rabanada da Øliver's com doce de leite, sobre tábua de madeira, em cenário natalino" loading="lazy">
+          <figcaption>Foto real do produto. Todas as fotos da Pizza de Rabanada estão na pasta do Drive.</figcaption>
+          <div class="chips"><a class="chip" href="https://drive.google.com/drive/folders/1p4FHqXmrGno9tLXXfEY4yKoUHFeIobLY" target="_blank" rel="noopener">Drive: fotos da Pizza de Rabanada</a></div>
+        </figure>
+        <div class="deliv">
+          <h3>Entregáveis</h3>
+          <ul>
+            <li><span class="ic">1</span><div><strong>Carrossel 01 · "It's time"</strong><span class="d">Ver briefing 1</span><div class="chips"><span class="chip">Feed 4:5 · 1080 × 1350</span></div></div></li>
+            <li><span class="ic">1</span><div><strong>Arte 02 · mãozinha do Grinch</strong><span class="d">Ver briefing 2</span><div class="chips"><span class="chip">Feed 4:5</span><span class="chip">Story 9:16</span></div></div></li>
+            <li><span class="ic">4</span><div><strong>Banners dos canais de pedido</strong><span class="d">iFood, Accon (banner + header) e 99Food. Ver briefing 3</span><div class="chips"><span class="chip">Medidas de cada canal</span></div></div></li>
+            <li><span class="ic">1</span><div><strong>Estático "Um pedaço só?"</strong><span class="d">Ver briefing 4</span><div class="chips"><span class="chip">4:5 · 9:16 · 1:1</span></div></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="briefs">
+        <article class="brief">
+          <span class="bn">1</span>
+          <h4>Carrossel 01 · "It's time"</h4>
+          <p><b>Direção criativa:</b></p>
+          <ul>
+            <li>Seguir a estética e a dinâmica do carrossel de referência.</li>
+            <li>Usar a mesma música da referência.</li>
+            <li>Uma <b>rabanada</b> é o elemento visual que acompanha a copy ao longo dos cards.</li>
+            <li>No último card, <b>revelar a Pizza de Rabanada da Øliver's</b>.</li>
+          </ul>
+          <div class="copy"><div class="l">Copy principal</div><div class="h">"It's timeeeeeeeee... PIZZA DE RABANADA DA ØLIVER'S!"</div></div>
+          <div class="chips"><span class="chip wait">Referência de carrossel: link a enviar</span><a class="chip" href="https://drive.google.com/drive/folders/1p4FHqXmrGno9tLXXfEY4yKoUHFeIobLY" target="_blank" rel="noopener">Materiais no Drive</a></div>
+        </article>
+
+        <article class="brief">
+          <span class="bn">2</span>
+          <h4>Arte 02 · feed e stories · mãozinha do Grinch</h4>
+          <p><b>Direção criativa:</b></p>
+          <ul>
+            <li>Usar a imagem da referência como base de composição.</li>
+            <li>Fundo clean, com estética natalina.</li>
+            <li>Uma <b>mãozinha verde do Grinch</b>, com manga vermelha e punho branco, segurando uma pizza ou uma fatia da Pizza de Rabanada.</li>
+            <li>Produto em destaque, com abordagem divertida e irreverente.</li>
+          </ul>
+          <div class="copy"><div class="l">Copy na arte</div><div class="h">"Se até o Grinch já garantiu a dele, tá esperando o quê? 💚"</div></div>
+          <p class="obj"><b>Objetivo:</b> gerar desejo e puxar pedidos com o apelo divertido do personagem.</p>
+          <div class="chips"><a class="chip" href="https://www.instagram.com/p/Df0TaglqlI0/" target="_blank" rel="noopener">Referência no Instagram</a><a class="chip" href="https://drive.google.com/drive/folders/1p4FHqXmrGno9tLXXfEY4yKoUHFeIobLY" target="_blank" rel="noopener">Fotos no Drive</a></div>
+        </article>
+
+        <article class="brief wide">
+          <span class="bn">3</span>
+          <h4>Banners pros canais de pedido</h4>
+          <p><b>Objetivo:</b> divulgar a Pizza de Rabanada nos canais de pedido da Øliver's, reforçando o produto como tradição de dezembro e puxando conversão em pedido.</p>
+          <div class="tbl"><table>
+            <tr><th>Canal</th><th>Medida</th><th>Copy</th></tr>
+            <tr><td><b>iFood</b></td><td>833 × 625 px</td><td>"A Pizza de Rabanada da Øliver's já está disponível. Peça agora!"</td></tr>
+            <tr><td><b>Accon</b><br><span class="cap" style="text-align:left">canal próprio</span></td><td>Banner 1600 × 800 px<br>Header 1080 × 520 px</td><td><b>Versão 1:</b> "Dezembro tem gosto de tradição! Pizza de Rabanada com doce de leite. Peça a sua!"<br><b>Versão 2:</b> "A mais esperada do Natal chegou! Pizza de Rabanada. Peça agora a tradição de todo ano!"</td></tr>
+            <tr><td><b>99Food</b></td><td>600 × 600 px</td><td>"Seu sabor favorito de dezembro está de volta! Experimente a Pizza de Rabanada."</td></tr>
+          </table></div>
+          <p style="margin-top:14px"><b>Direção criativa:</b></p>
+          <ul>
+            <li>Usar <b>fotos reais</b> da Pizza de Rabanada (Drive).</li>
+            <li>Produto em destaque, valorizando aparência e ingredientes.</li>
+            <li>Comunicação apetitosa, com referências sutis ao Natal.</li>
+            <li>Identidade visual da Øliver's.</li>
+            <li>Boa leitura das copies e destaque pro CTA de compra.</li>
+          </ul>
+          <p><b>Especificações:</b> respeitar as medidas de cada canal, adaptar a composição ao espaço de cada um e manter unidade visual entre as peças.</p>
+          <p class="obj"><b>Entrega final:</b> banner do iFood, banner + header da Accon e banner do 99Food.</p>
+        </article>
+
+        <article class="brief">
+          <span class="bn">4</span>
+          <h4>Estático · "Um pedaço só?"</h4>
+          <p><b>Conceito:</b> despertar a vontade de experimentar a Pizza de Rabanada.</p>
+          <ul>
+            <li>Foto de uma <b>fatia em primeiro plano</b>.</li>
+            <li>Fundo natalino sutil, sem excesso de elementos.</li>
+            <li>Copy grande, com hierarquia visual e personalidade.</li>
+          </ul>
+          <div class="copy"><div class="l">Copy</div><div class="h">"Um pedaço só? Em dezembro?!"</div></div>
+          <p class="obj"><b>Objetivo:</b> fixação do produto e desejo de consumo.</p>
+          <div class="chips"><a class="chip" href="https://drive.google.com/drive/folders/1p4FHqXmrGno9tLXXfEY4yKoUHFeIobLY" target="_blank" rel="noopener">Fotos no Drive</a></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- CALENDÁRIO DE DEZEMBRO -->
+    <div class="sub">
+      <span class="tag">Øliver's · calendário de dezembro</span>
+      <h3 class="subh">Estáticos do perfil</h3>
+      <p class="intro">Peças do calendário de dezembro da Øliver's, fora a Pizza de Rabanada. Cada uma em feed, story e quadrado.</p>
+
+      <div class="briefs">
+        <article class="brief">
+          <span class="bn">5</span>
+          <h4>Estático 01 · "dívida" de pizza</h4>
+          <p><b>Conceito:</b> um post feito pra marcar aquela pessoa que está devendo um encontro ou uma pizza.</p>
+          <ul>
+            <li>Foto de uma pizza <b>vista de cima</b>, ocupando boa parte da composição.</li>
+            <li>Tipografia grande e descontraída.</li>
+            <li>Copy centralizada, pouco texto.</li>
+            <li>Identidade da Øliver's aplicada sem competir com a foto.</li>
+          </ul>
+          <div class="copy"><div class="l">Copy</div><div class="h">"Marque quem precisa resolver essa dívida antes do ano acabar."</div></div>
+          <figure style="margin-top:14px"><img class="photo" src="natal/pizza-vista-de-cima.jpg" alt="Pizza vista de cima sobre tábua de madeira, fundo preto" loading="lazy"><figcaption>Foto indicada pra peça.</figcaption></figure>
+          <div class="chips"><a class="chip" href="https://drive.google.com/file/d/1MUCYaxdpMY7P9nHMN4RHKyXp-K3YXg4i/view?usp=drive_link" target="_blank" rel="noopener">Foto em alta no Drive</a><span class="chip">4:5 · 9:16 · 1:1</span></div>
+        </article>
+
+        <article class="brief">
+          <span class="bn">6</span>
+          <h4>Estático 02 · seleção de sabores</h4>
+          <p>Seguir a referência abaixo, feita <b>com fotos reais</b> dos nossos sabores. Os 5 sabores da seleção:</p>
+          <div class="flavors">
+            <figure><img src="natal/golden-aussie.jpg" alt="Pizza Golden Aussie" loading="lazy"><figcaption>Golden Aussie</figcaption></figure>
+            <figure><img src="natal/targaryen.jpg" alt="Pizza Targaryen" loading="lazy"><figcaption>Targaryen</figcaption></figure>
+            <figure><img src="natal/rabanada.jpg" alt="Pizza de Rabanada" loading="lazy"><figcaption>Rabanada</figcaption></figure>
+            <figure><img src="natal/torta-de-limao.jpg" alt="Pizza Torta de Limão" loading="lazy"><figcaption>Torta de Limão</figcaption></figure>
+            <figure><img src="natal/best-tasty-ribs.jpg" alt="Pizza Best Tasty Ribs" loading="lazy"><figcaption>Best Tasty Ribs</figcaption></figure>
+          </div>
+          <div class="chips"><a class="chip" href="https://www.instagram.com/p/DgN7ujsAhBj/" target="_blank" rel="noopener">Referência no Instagram</a><a class="chip" href="https://drive.google.com/drive/folders/1CrOYF0wP39GcHZbH4PHardmHwdFMAAjN" target="_blank" rel="noopener">Drive: fotos dos sabores em alta</a><a class="chip" href="https://drive.google.com/drive/folders/1p4FHqXmrGno9tLXXfEY4yKoUHFeIobLY" target="_blank" rel="noopener">Drive: Rabanada</a></div>
+        </article>
+      </div>
     </div>
   </div>
 </section>
