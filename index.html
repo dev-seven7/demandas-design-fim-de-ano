@@ -79,6 +79,20 @@
   figure img{display:block;width:100%;max-width:300px;border-radius:16px;border:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(0,0,0,.45)}
   figcaption{font-size:13px;color:var(--faint);margin-top:10px}
 
+  /* ambientação da loja */
+  .amb{margin-top:40px;padding-top:32px;border-top:1px dashed var(--line)}
+  .amb .intro{max-width:640px;color:var(--soft)}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:22px}
+  .gallery figure.wide{grid-column:1 / -1}
+  .gallery figure img{max-width:none;aspect-ratio:auto;height:auto}
+  .gallery figure.tall img{max-height:520px;width:auto;max-width:100%}
+  @media (max-width:720px){.gallery{grid-template-columns:1fr}}
+  .dna{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+  .dna span{font-size:13px;padding:4px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--soft)}
+  .mock{margin-top:26px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:14px;padding:18px 20px}
+  .mock p:last-child{margin-bottom:0}
+  .credit{font-size:12px;color:var(--faint);margin-top:16px;letter-spacing:.04em}
+
   .wheel{width:160px;height:160px;border-radius:50%;position:relative;border:3px solid var(--ink);
     background:conic-gradient(#d62828 0 72deg,#2a9d4b 72deg 144deg,#f4c20d 144deg 216deg,#f77f00 216deg 288deg,#1d7fd1 288deg 360deg)}
   .wheel::after{content:"";position:absolute;left:50%;top:50%;width:4px;height:66px;background:var(--ink);transform:translate(-50%,-100%) rotate(40deg);transform-origin:50% 100%;border-radius:2px}
@@ -317,7 +331,7 @@
         <div class="deliv">
           <h3>Loja</h3>
           <ul>
-            <li><span class="ic">20</span><div><strong>Artes de quadro</strong><span class="d">20 artes diferentes que conversam entre si (ver direcionamento ao lado)</span><div class="chips"><span class="chip date">Até 30/11</span><span class="chip wait">Provavelmente A1 · dimensões a enviar</span></div></div></li>
+            <li><span class="ic">20</span><div><strong>Artes de quadro</strong><span class="d">20 artes diferentes que conversam entre si (ver direcionamento ao lado)</span><div class="chips"><span class="chip date">Até 30/11</span><span class="chip">Mockup nas paredes da loja</span><span class="chip wait">Provavelmente A1 · dimensões a enviar</span></div></div></li>
             <li><span class="ic">1</span><div><strong>Adesivo da porta da Área Kids</strong><span class="d">Tapa a passagem dos entregadores, pela segurança das crianças</span><div class="chips"><span class="chip date">Até 05/12</span><span class="chip wait">2,10 × 1,50 m a confirmar</span><span class="chip wait">Direcionamento a enviar</span></div></div></li>
           </ul>
         </div>
@@ -334,6 +348,30 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="amb">
+      <h3>Direcionamento dos quadros · como a loja vai ficar</h3>
+      <p class="intro">Estas são as imagens do projeto de arquitetura da loja. Os quadros entram nas paredes de molduras que aparecem no salão e no balcão. A ideia é que as 20 artes pareçam parte do ambiente, não um elemento colado depois.</p>
+      <div class="dna" aria-label="DNA da loja">
+        <span>Verde Øliver's</span><span>Metais escuros</span><span>Madeira</span><span>Tecido listrado</span><span>Oliveiras e vegetação</span><span>Luz quente e indireta</span>
+      </div>
+      <p class="intro" style="margin-top:14px">O salão já tem bastante verde no teto e luz amarelada. Os quadros precisam respeitar essa paleta e funcionar bem com pouca luz.</p>
+
+      <div class="gallery">
+        <figure class="wide"><img src="oceanica/salao-principal.jpg" alt="Salão principal com paredes de molduras dos dois lados, oliveiras, pendentes e faixa de luz verde no teto" loading="lazy"><figcaption><b>Salão principal.</b> Paredes de molduras dos dois lados, entre as TVs. É aqui que fica a maior parte dos quadros.</figcaption></figure>
+        <figure class="tall"><img src="oceanica/parede-quadros-sofa.jpg" alt="Parede lateral do salão com composição de molduras de tamanhos variados entre as TVs" loading="lazy"><figcaption><b>Parede lateral do salão.</b> Composição de molduras em tamanhos diferentes, entre as TVs e acima da faixa de luz. Esse é o tipo de montagem que os quadros vão ter.</figcaption></figure>
+        <figure><img src="oceanica/salao-tv.jpg" alt="Vista do salão com oliveiras, divisórias metálicas e molduras nas paredes laterais" loading="lazy"><figcaption><b>Salão, vista central.</b> Oliveiras e divisórias metálicas no meio, molduras nas paredes laterais.</figcaption></figure>
+        <figure class="wide"><img src="oceanica/balcao.jpg" alt="Balcão de atendimento com a logo Øliver's e molduras na parede lateral" loading="lazy"><figcaption><b>Balcão.</b> Molduras na lateral, perto da logo. Ponto de muita visibilidade.</figcaption></figure>
+        <figure><img src="oceanica/fachada.jpg" alt="Fachada da loja com a assinatura Øliver's iluminada e varanda com vegetação" loading="lazy"><figcaption><b>Fachada.</b> A primeira leitura da loja, pra entender o clima geral.</figcaption></figure>
+        <figure><img src="oceanica/area-kids.jpg" alt="Área Kids com mesinhas, pufes verdes, estante de livros e TV" loading="lazy"><figcaption><b>Área Kids.</b> Referência também pro adesivo da porta.</figcaption></figure>
+      </div>
+
+      <div class="mock">
+        <h3>Mockup</h3>
+        <p>Conforme for fechando as artes, aplique nessas imagens (ou em foto equivalente) pra gente ver como os quadros ficam na parede, em escala real, com a luz da loja. A aprovação dos quadros vai ser feita em cima do mockup.</p>
+      </div>
+      <p class="credit">Imagens ilustrativas do projeto · ARCHIVERO</p>
     </div>
   </div>
 </section>
@@ -373,7 +411,7 @@
 </section>
 
 <footer>
-  <div class="wrap">Marketing Grupo ROB · versão de 19/11/2026. Arquivos de marca, fotos e assets oficiais são enviados à parte.</div>
+  <div class="wrap">Marketing Grupo ROB · versão de 27/11/2026. Arquivos de marca, fotos e assets oficiais são enviados à parte.</div>
 </footer>
 
 </body>
